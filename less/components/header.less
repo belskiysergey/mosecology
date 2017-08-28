@@ -1,0 +1,218 @@
+// Стили шапки сайта
+
+#ac_background {
+    height: inherit;
+    background: black;
+}
+
+img.ac_bgimage {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	opacity: 0.8;
+	display: none;
+}
+
+.ac_overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: transparent url("../images/pattern.png") repeat top left;
+}
+
+.ac_loading {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	background: #000 url("../images/loader.gif") no-repeat center center;
+	width: 50px;
+	height: 50px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	z-index: 999;
+	opacity: 0.7;
+	display: none;
+}
+
+.ac_content {
+	position: absolute;
+	height: 90px;
+	width: 100%;
+	top: 50%;
+	left: 0px;
+	margin-top: -65px;
+
+    h1 {
+		background: transparent url("../images/bg_menu.png") repeat top left;
+		display: block;
+		float: left;
+		width: 220px;
+		height: 50px;
+		padding: 20px;
+		font-size: 38.5px;
+		font-weight: bold;
+		line-height: 20px;
+		margin-right: 1px;
+
+		span {
+			display: block;
+			font-weight: normal;
+			font-size: 14px;
+			margin-top: 2px;
+		}
+	}
+}
+
+.ac_menu {
+	background: transparent url("../images/bg_menu.png") repeat top left;
+	float: left;
+	position: relative;
+	height: 90px;
+	width: 0px; 
+
+	& > ul {
+		float: right;
+	}
+
+	& > ul > li {
+		float: left;
+		position: relative;
+		// overflow: hidden;
+	}
+
+	& > ul > li > a {
+		margin-top: 60px;
+		opacity: 0;
+		display: block;
+		height: 90px;
+		padding: 0px 10px;
+		text-align: center;
+		line-height: 90px;
+		outline: none;
+		font-size: 18px;
+		font-weight: bold;
+		text-shadow: 1px 1px 1px #000;
+	}
+}
+
+.ac_subitem {
+	width: 400px;
+	height: 0px; /* animate to 400px */
+	top: 50%;
+	right: 0px;
+	margin-top: 0px; /* animate to -200px */
+	position: absolute;
+	z-index: 99;
+	overflow: auto;
+	background: transparent url("../images/bg_menu.png") repeat top left;
+    
+    h2 {
+		font-size: 22px;
+		font-weight: bold;
+		color: #fff;
+		padding:  40px 0px 0px 40px;
+		text-shadow: 0px 0px 1px #000;
+	}
+
+	ul {
+		padding: 0px 40px;
+	}
+
+	ul li {
+		margin: 10px 0px;
+	}
+
+	ul li:first-child {
+		font-size: 14px;
+		text-transform: none;
+		border-bottom: 1px dotted #333;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+span.ac_close {
+	float: right;
+	margin: 10px;
+	width: 11px;
+	height: 12px;
+	cursor: pointer;
+	background: transparent url("../images/close.png") no-repeat top left;
+	opacity: 0.4;
+
+	&:hover {
+		opacity:  1.0;
+	}
+}
+
+.ac_footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	font-size: 13px;
+	background: #000;
+	opacity: 0.9;
+	height: 20px;
+	padding-bottom: 5px;
+
+	a {
+		padding: 5px 10px;
+		letter-spacing: 1px;
+		text-shadow: 1px 1px 1px #000;
+		color: #ddd;
+		float: right;
+
+		&:hover {
+			color:  #ffffff;
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+
+	}
+
+	a.ac_left {
+		float: left;
+	}
+}
+
+.main-section {
+	height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#about {
+	width: 100%;
+	height: 500px;
+	background: #ffffff;
+}
+
+.name_service {
+	float: left;
+}
+
+.cost {
+	float: right;
+}
+
+.email, .form_header {
+	text-transform: none;
+}
+
+.input {
+	display: block;
+	margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+.submit {
+	margin-left: 40px;
+}
