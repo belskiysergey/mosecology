@@ -314,8 +314,10 @@ img.ac_bgimage {
   width: 226px;
   height: 187px;
   background: url("../images/logo-white.png") no-repeat;
-  position: relative;
-  top: -70px;
+  position: absolute;
+  top: -110px;
+  left: 286px;
+  z-index: 1;
 }
 .name_company {
   text-transform: uppercase;
@@ -328,11 +330,9 @@ img.ac_bgimage {
 .ac_subitem {
   width: 400px;
   height: 0px;
-  /* animate to 400px */
   top: 50%;
   right: 0px;
   margin-top: 0px;
-  /* animate to -200px */
   position: absolute;
   z-index: 99;
   overflow: auto;
@@ -423,7 +423,9 @@ span.ac_close:hover {
 .our_advantages {
   width: 100%;
   height: 100%;
-  background-image: url("../images/pattern.png");
+  background: url("../images/head-line.jpg") no-repeat 0px 0px;
+  background-position-x: center;
+  background-repeat-x: repeat;
   background-color: #bcbcba;
   box-sizing: border-box;
   padding: 30px;
@@ -432,11 +434,25 @@ span.ac_close:hover {
   text-align: center;
   font-size: 35px;
   color: black;
-  margin-bottom: 80px;
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+.logo-bg {
+  width: 100%;
+  height: 84%;
+  background: url("../images/logo-white.png") no-repeat;
+  position: absolute;
+  top: 940px;
+  left: 0;
+  background-size: cover;
+  opacity: .2;
+}
+.container {
+  margin: 0 auto;
 }
 .block_left {
   float: left;
-  width: 450px;
+  width: 48%;
 }
 .block_left p {
   float: right;
@@ -446,7 +462,7 @@ span.ac_close:hover {
 }
 .block_right {
   float: right;
-  width: 450px;
+  width: 48%;
 }
 .block_right p {
   float: left;
@@ -488,4 +504,50 @@ span.ac_close:hover {
 .services {
   float: right;
   background: url("../images/sprite.png") no-repeat -300px 0px;
+}
+/* 1400px */
+@media screen and (max-width: 1400px) {
+  .our_advantages {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    position: absolute;
+    top: -250px;
+    left: 26px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .logo {
+    position: absolute !important;
+    top: -180px !important;
+  }
+  .ac_menu {
+    position: relative !important;
+    top: 0px !important;
+  }
+}
+/* 600px */
+@media screen and (max-width: 600px) {
+  .block_left,
+  .block_right {
+    float: none;
+    width: 100%;
+  }
+  .block_left p,
+  .block_right p {
+    float: right;
+  }
+  .experience,
+  .laboratory,
+  .services {
+    float: left;
+  }
+}
+/* 400px */
+@media screen and (max-width: 400px) {
+  .info {
+    text-align: center;
+  }
 }
